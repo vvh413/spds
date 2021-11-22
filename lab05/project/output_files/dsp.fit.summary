@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Nov 22 21:13:00 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : dsp
+Top-level Entity Name : part1
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 244 / 32,070 ( < 1 % )
+Total registers : 297
+Total pins : 22 / 457 ( 5 % )
+Total virtual pins : 0
+Total block memory bits : 12,288 / 4,065,280 ( < 1 % )
+Total RAM Blocks : 4 / 397 ( 1 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )

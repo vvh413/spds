@@ -1,0 +1,2767 @@
+$comment
+	File created using the following command:
+		vcd file dsp.msim.vcd -direction
+$end
+$date
+	Mon Nov 22 19:44:48 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module part1_vlg_vec_tst $end
+$var reg 1 ! AUD_ADCDAT $end
+$var reg 1 " AUD_ADCLRCK $end
+$var reg 1 # AUD_BCLK $end
+$var reg 1 $ AUD_DACLRCK $end
+$var reg 1 % CLOCK2_50 $end
+$var reg 1 & CLOCK_50 $end
+$var reg 1 ' treg_FPGA_I2C_SDAT $end
+$var reg 2 ( KEY [1:0] $end
+$var wire 1 ) AUD_DACDAT $end
+$var wire 1 * AUD_XCK $end
+$var wire 1 + FPGA_I2C_SCLK $end
+$var wire 1 , FPGA_I2C_SDAT $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 KEY[1]~input_o $end
+$var wire 1 4 FPGA_I2C_SDAT~input_o $end
+$var wire 1 5 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 6 CLOCK_50~input_o $end
+$var wire 1 7 CLOCK_50~inputCLKENA0_outclk $end
+$var wire 1 8 KEY[0]~input_o $end
+$var wire 1 9 cfg|Auto_Initialize|rom_address_counter~1_combout $end
+$var wire 1 : cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_0_CHECK_STATUS~0_combout $end
+$var wire 1 ; cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_0_CHECK_STATUS~q $end
+$var wire 1 < cfg|Auto_Initialize|rom_address_counter~0_combout $end
+$var wire 1 = cfg|Auto_Initialize|Add0~1_combout $end
+$var wire 1 > cfg|Auto_Initialize|Add0~2_combout $end
+$var wire 1 ? cfg|Auto_Initialize|Ram0~0_combout $end
+$var wire 1 @ cfg|Auto_Initialize|Equal0~0_combout $end
+$var wire 1 A cfg|Auto_Initialize|Selector1~0_combout $end
+$var wire 1 B cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_2_TRANSFER_BYTE_1~q $end
+$var wire 1 C cfg|Auto_Initialize|Selector2~0_combout $end
+$var wire 1 D cfg|Auto_Initialize|Selector2~1_combout $end
+$var wire 1 E cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_3_TRANSFER_BYTE_2~q $end
+$var wire 1 F cfg|Auto_Initialize|Selector3~0_combout $end
+$var wire 1 G cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_4_WAIT~q $end
+$var wire 1 H cfg|Auto_Initialize|s_i2c_auto_init~13_combout $end
+$var wire 1 I cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_5_SEND_STOP_BIT~q $end
+$var wire 1 J cfg|Auto_Initialize|s_i2c_auto_init~15_combout $end
+$var wire 1 K cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_6_INCREASE_COUNTER~q $end
+$var wire 1 L cfg|Auto_Initialize|s_i2c_auto_init~14_combout $end
+$var wire 1 M cfg|Auto_Initialize|Add0~0_combout $end
+$var wire 1 N cfg|Auto_Initialize|Add0~3_combout $end
+$var wire 1 O cfg|Auto_Initialize|Selector0~0_combout $end
+$var wire 1 P cfg|Auto_Initialize|Selector0~1_combout $end
+$var wire 1 Q cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_1_SEND_START_BIT~q $end
+$var wire 1 R cfg|Auto_Initialize|transfer_data~0_combout $end
+$var wire 1 S cfg|Auto_Initialize|transfer_data~q $end
+$var wire 1 T cfg|Clock_Generator_400KHz|Add0~37_sumout $end
+$var wire 1 U cfg|Clock_Generator_400KHz|clk_counter[2]~0_combout $end
+$var wire 1 V cfg|Clock_Generator_400KHz|Add0~38 $end
+$var wire 1 W cfg|Clock_Generator_400KHz|Add0~33_sumout $end
+$var wire 1 X cfg|Clock_Generator_400KHz|Add0~34 $end
+$var wire 1 Y cfg|Clock_Generator_400KHz|Add0~29_sumout $end
+$var wire 1 Z cfg|Clock_Generator_400KHz|Add0~30 $end
+$var wire 1 [ cfg|Clock_Generator_400KHz|Add0~25_sumout $end
+$var wire 1 \ cfg|Clock_Generator_400KHz|Add0~26 $end
+$var wire 1 ] cfg|Clock_Generator_400KHz|Add0~21_sumout $end
+$var wire 1 ^ cfg|Clock_Generator_400KHz|Add0~22 $end
+$var wire 1 _ cfg|Clock_Generator_400KHz|Add0~17_sumout $end
+$var wire 1 ` cfg|Clock_Generator_400KHz|Add0~18 $end
+$var wire 1 a cfg|Clock_Generator_400KHz|Add0~13_sumout $end
+$var wire 1 b cfg|Clock_Generator_400KHz|Add0~14 $end
+$var wire 1 c cfg|Clock_Generator_400KHz|Add0~9_sumout $end
+$var wire 1 d cfg|Clock_Generator_400KHz|Add0~10 $end
+$var wire 1 e cfg|Clock_Generator_400KHz|Add0~5_sumout $end
+$var wire 1 f cfg|Clock_Generator_400KHz|Add0~6 $end
+$var wire 1 g cfg|Clock_Generator_400KHz|Add0~1_sumout $end
+$var wire 1 h cfg|Clock_Generator_400KHz|middle_of_high_level~0_combout $end
+$var wire 1 i cfg|Clock_Generator_400KHz|middle_of_low_level~0_combout $end
+$var wire 1 j cfg|Clock_Generator_400KHz|middle_of_low_level~q $end
+$var wire 1 k cfg|Auto_Initialize|send_start_bit~0_combout $end
+$var wire 1 l cfg|Auto_Initialize|send_start_bit~q $end
+$var wire 1 m cfg|Clock_Generator_400KHz|new_clk~q $end
+$var wire 1 n cfg|Clock_Generator_400KHz|middle_of_high_level~1_combout $end
+$var wire 1 o cfg|Clock_Generator_400KHz|middle_of_high_level~q $end
+$var wire 1 p cfg|I2C_Controller|Selector1~0_combout $end
+$var wire 1 q cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_1_PRE_START~q $end
+$var wire 1 r cfg|I2C_Controller|Selector2~0_combout $end
+$var wire 1 s cfg|I2C_Controller|Selector2~1_combout $end
+$var wire 1 t cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_2_START_BIT~q $end
+$var wire 1 u cfg|I2C_Controller|Selector3~1_combout $end
+$var wire 1 v cfg|Auto_Initialize|Selector6~0_combout $end
+$var wire 1 w cfg|Auto_Initialize|s_i2c_auto_init.AUTO_STATE_7_DONE~q $end
+$var wire 1 x cfg|num_bits_to_transfer~0_combout $end
+$var wire 1 y cfg|I2C_Controller|current_bit~2_combout $end
+$var wire 1 z cfg|I2C_Controller|current_bit[0]~1_combout $end
+$var wire 1 { cfg|I2C_Controller|current_bit~0_combout $end
+$var wire 1 | cfg|I2C_Controller|Selector3~0_combout $end
+$var wire 1 } cfg|I2C_Controller|Selector3~2_combout $end
+$var wire 1 ~ cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_3_TRANSFER_BYTE~q $end
+$var wire 1 !! cfg|I2C_Controller|current_bit~3_combout $end
+$var wire 1 "! cfg|I2C_Controller|Selector4~0_combout $end
+$var wire 1 #! cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_4_TRANSFER_ACK~q $end
+$var wire 1 $! cfg|I2C_Controller|Selector6~0_combout $end
+$var wire 1 %! cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_6_COMPLETE~q $end
+$var wire 1 &! cfg|Auto_Initialize|send_stop_bit~0_combout $end
+$var wire 1 '! cfg|Auto_Initialize|send_stop_bit~q $end
+$var wire 1 (! cfg|I2C_Controller|s_i2c_transceiver~12_combout $end
+$var wire 1 )! cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_0_IDLE~q $end
+$var wire 1 *! cfg|I2C_Controller|Selector5~0_combout $end
+$var wire 1 +! cfg|I2C_Controller|s_i2c_transceiver.I2C_STATE_5_STOP_BIT~q $end
+$var wire 1 ,! cfg|Auto_Initialize|data_out~5_combout $end
+$var wire 1 -! cfg|Auto_Initialize|Ram0~33_combout $end
+$var wire 1 .! cfg|Auto_Initialize|Ram0~34_combout $end
+$var wire 1 /! cfg|Auto_Initialize|Ram0~35_combout $end
+$var wire 1 0! cfg|Auto_Initialize|data_out~6_combout $end
+$var wire 1 1! cfg|Auto_Initialize|data_out[7]~4_combout $end
+$var wire 1 2! cfg|data_to_transfer[4]~0_combout $end
+$var wire 1 3! cfg|I2C_Controller|current_byte[0]~0_combout $end
+$var wire 1 4! cfg|Auto_Initialize|Ram0~16_combout $end
+$var wire 1 5! cfg|Auto_Initialize|Ram0~17_combout $end
+$var wire 1 6! cfg|Auto_Initialize|Ram0~15_combout $end
+$var wire 1 7! cfg|Auto_Initialize|Ram0~14_combout $end
+$var wire 1 8! cfg|Auto_Initialize|Ram0~25_combout $end
+$var wire 1 9! cfg|Auto_Initialize|data_out~11_combout $end
+$var wire 1 :! cfg|I2C_Controller|current_byte[3]~feeder_combout $end
+$var wire 1 ;! cfg|Auto_Initialize|data_out~0_combout $end
+$var wire 1 <! cfg|Auto_Initialize|data_out~2_combout $end
+$var wire 1 =! cfg|Auto_Initialize|data_out~1_combout $end
+$var wire 1 >! cfg|Auto_Initialize|Ram0~3_combout $end
+$var wire 1 ?! cfg|Auto_Initialize|Ram0~24_combout $end
+$var wire 1 @! cfg|Auto_Initialize|Ram0~23_combout $end
+$var wire 1 A! cfg|Auto_Initialize|data_out~13_combout $end
+$var wire 1 B! cfg|Auto_Initialize|Ram0~11_combout $end
+$var wire 1 C! cfg|Auto_Initialize|Ram0~12_combout $end
+$var wire 1 D! cfg|Auto_Initialize|Ram0~13_combout $end
+$var wire 1 E! cfg|Auto_Initialize|Ram0~10_combout $end
+$var wire 1 F! cfg|Auto_Initialize|Ram0~29_combout $end
+$var wire 1 G! cfg|Auto_Initialize|data_out~10_combout $end
+$var wire 1 H! cfg|I2C_Controller|current_byte[1]~feeder_combout $end
+$var wire 1 I! cfg|Auto_Initialize|Ram0~21_combout $end
+$var wire 1 J! cfg|Auto_Initialize|Ram0~19_combout $end
+$var wire 1 K! cfg|Auto_Initialize|Ram0~20_combout $end
+$var wire 1 L! cfg|Auto_Initialize|Ram0~18_combout $end
+$var wire 1 M! cfg|Auto_Initialize|Ram0~22_combout $end
+$var wire 1 N! cfg|Auto_Initialize|data_out~12_combout $end
+$var wire 1 O! cfg|I2C_Controller|current_byte[0]~feeder_combout $end
+$var wire 1 P! cfg|I2C_Controller|Mux0~5_combout $end
+$var wire 1 Q! cfg|Auto_Initialize|Ram0~7_combout $end
+$var wire 1 R! cfg|Auto_Initialize|Ram0~8_combout $end
+$var wire 1 S! cfg|Auto_Initialize|data_out~8_combout $end
+$var wire 1 T! cfg|Auto_Initialize|Ram0~9_combout $end
+$var wire 1 U! cfg|Auto_Initialize|data_out~9_combout $end
+$var wire 1 V! cfg|Auto_Initialize|Ram0~6_combout $end
+$var wire 1 W! cfg|Auto_Initialize|data_out~14_combout $end
+$var wire 1 X! cfg|Auto_Initialize|Ram0~1_combout $end
+$var wire 1 Y! cfg|Auto_Initialize|Ram0~2_combout $end
+$var wire 1 Z! cfg|Auto_Initialize|data_out~3_combout $end
+$var wire 1 [! cfg|Auto_Initialize|Ram0~5_combout $end
+$var wire 1 \! cfg|Auto_Initialize|Ram0~4_combout $end
+$var wire 1 ]! cfg|Auto_Initialize|data_out~7_combout $end
+$var wire 1 ^! cfg|I2C_Controller|current_byte[4]~feeder_combout $end
+$var wire 1 _! cfg|I2C_Controller|Mux0~0_combout $end
+$var wire 1 `! cfg|I2C_Controller|Mux0~4_combout $end
+$var wire 1 a! cfg|I2C_Controller|i2c_sdata~1_combout $end
+$var wire 1 b! CLOCK2_50~input_o $end
+$var wire 1 c! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_REFCLK_SELECT_O_EXTSWITCHBUF $end
+$var wire 1 d! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_REFCLK_SELECT_O_CLKOUT $end
+$var wire 1 e! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI2 $end
+$var wire 1 f! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI3 $end
+$var wire 1 g! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI4 $end
+$var wire 1 h! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI5 $end
+$var wire 1 i! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI6 $end
+$var wire 1 j! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI7 $end
+$var wire 1 k! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_O_UP $end
+$var wire 1 l! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI1 $end
+$var wire 1 m! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_O_SHIFTENM $end
+$var wire 1 n! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_MHI0 $end
+$var wire 1 o! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_O_SHIFT $end
+$var wire 1 p! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|fb_clkin $end
+$var wire 1 q! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_CNTNEN $end
+$var wire 1 r! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIGSHIFTEN2 $end
+$var wire 1 s! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_TCLK $end
+$var wire 1 t! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH0 $end
+$var wire 1 u! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH1 $end
+$var wire 1 v! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH2 $end
+$var wire 1 w! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH3 $end
+$var wire 1 x! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH4 $end
+$var wire 1 y! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH5 $end
+$var wire 1 z! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH6 $end
+$var wire 1 {! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_O_VCOPH7 $end
+$var wire 1 |! my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk[0]~CLKENA0_outclk $end
+$var wire 1 }! AUD_DACLRCK~input_o $end
+$var wire 1 ~! codec|DAC_Left_Right_Clock_Edges|cur_test_clk~q $end
+$var wire 1 !" codec|DAC_Left_Right_Clock_Edges|last_test_clk~q $end
+$var wire 1 "" codec|done_dac_channel_sync~0_combout $end
+$var wire 1 #" codec|done_dac_channel_sync~q $end
+$var wire 1 $" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~sumout $end
+$var wire 1 %" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~sumout $end
+$var wire 1 &" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~2_combout $end
+$var wire 1 '" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~COUT $end
+$var wire 1 (" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~sumout $end
+$var wire 1 )" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~COUT $end
+$var wire 1 *" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~sumout $end
+$var wire 1 +" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~COUT $end
+$var wire 1 ," codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~sumout $end
+$var wire 1 -" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~COUT $end
+$var wire 1 ." codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~sumout $end
+$var wire 1 /" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~COUT $end
+$var wire 1 0" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~sumout $end
+$var wire 1 1" codec|Audio_Out_Serializer|Add0~6 $end
+$var wire 1 2" codec|Audio_Out_Serializer|Add0~10 $end
+$var wire 1 3" codec|Audio_Out_Serializer|Add0~14 $end
+$var wire 1 4" codec|Audio_Out_Serializer|Add0~18 $end
+$var wire 1 5" codec|Audio_Out_Serializer|Add0~22 $end
+$var wire 1 6" codec|Audio_Out_Serializer|Add0~25_sumout $end
+$var wire 1 7" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~COUT $end
+$var wire 1 8" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita6~sumout $end
+$var wire 1 9" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|almost_full_comparer|data_wire[0]~0_combout $end
+$var wire 1 :" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|almost_full_comparer|data_wire[0]~1_combout $end
+$var wire 1 ;" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~0_combout $end
+$var wire 1 <" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|full_dff~q $end
+$var wire 1 =" codec|Audio_Out_Serializer|Add0~26 $end
+$var wire 1 >" codec|Audio_Out_Serializer|Add0~2 $end
+$var wire 1 ?" codec|Audio_Out_Serializer|Add0~29_sumout $end
+$var wire 1 @" codec|Equal2~1_combout $end
+$var wire 1 A" codec|Audio_Out_Serializer|Add1~29_sumout $end
+$var wire 1 B" codec|Audio_Out_Serializer|Add1~30 $end
+$var wire 1 C" codec|Audio_Out_Serializer|Add1~25_sumout $end
+$var wire 1 D" codec|Equal3~1_combout $end
+$var wire 1 E" codec|Audio_Out_Serializer|Add0~9_sumout $end
+$var wire 1 F" codec|Audio_Out_Serializer|Add0~5_sumout $end
+$var wire 1 G" codec|Audio_Out_Serializer|Add0~1_sumout $end
+$var wire 1 H" codec|Audio_Out_Serializer|Add0~17_sumout $end
+$var wire 1 I" codec|Audio_Out_Serializer|Add0~13_sumout $end
+$var wire 1 J" codec|Audio_Out_Serializer|Add0~21_sumout $end
+$var wire 1 K" codec|Equal2~0_combout $end
+$var wire 1 L" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~COUT $end
+$var wire 1 M" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~sumout $end
+$var wire 1 N" codec|Audio_Out_Serializer|Add1~26 $end
+$var wire 1 O" codec|Audio_Out_Serializer|Add1~21_sumout $end
+$var wire 1 P" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~COUT $end
+$var wire 1 Q" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~sumout $end
+$var wire 1 R" codec|Audio_Out_Serializer|Add1~22 $end
+$var wire 1 S" codec|Audio_Out_Serializer|Add1~17_sumout $end
+$var wire 1 T" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~COUT $end
+$var wire 1 U" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~sumout $end
+$var wire 1 V" codec|Audio_Out_Serializer|Add1~18 $end
+$var wire 1 W" codec|Audio_Out_Serializer|Add1~13_sumout $end
+$var wire 1 X" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~COUT $end
+$var wire 1 Y" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~sumout $end
+$var wire 1 Z" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~COUT $end
+$var wire 1 [" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita6~sumout $end
+$var wire 1 \" codec|Audio_Out_Serializer|Add1~14 $end
+$var wire 1 ]" codec|Audio_Out_Serializer|Add1~10 $end
+$var wire 1 ^" codec|Audio_Out_Serializer|Add1~6 $end
+$var wire 1 _" codec|Audio_Out_Serializer|Add1~1_sumout $end
+$var wire 1 `" codec|Audio_Out_Serializer|Add1~9_sumout $end
+$var wire 1 a" codec|Audio_Out_Serializer|Add1~5_sumout $end
+$var wire 1 b" codec|Equal3~0_combout $end
+$var wire 1 c" codec|Audio_Out_Serializer|comb~0_combout $end
+$var wire 1 d" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~1_combout $end
+$var wire 1 e" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~2_combout $end
+$var wire 1 f" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_2~0_combout $end
+$var wire 1 g" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_2_dff~q $end
+$var wire 1 h" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~1_combout $end
+$var wire 1 i" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_0_dff~q $end
+$var wire 1 j" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~1_combout $end
+$var wire 1 k" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_1_dff~q $end
+$var wire 1 l" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~0_combout $end
+$var wire 1 m" codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q $end
+$var wire 1 n" codec|Audio_Out_Serializer|left_channel_was_read~0_combout $end
+$var wire 1 o" codec|Audio_Out_Serializer|left_channel_was_read~q $end
+$var wire 1 p" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~1_combout $end
+$var wire 1 q" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~COUT $end
+$var wire 1 r" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~sumout $end
+$var wire 1 s" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|almost_full_comparer|data_wire[0]~0_combout $end
+$var wire 1 t" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|almost_full_comparer|data_wire[0]~1_combout $end
+$var wire 1 u" codec|Audio_Out_Serializer|read_right_channel~0_combout $end
+$var wire 1 v" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~0_combout $end
+$var wire 1 w" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|full_dff~q $end
+$var wire 1 x" codec|Audio_Out_Serializer|comb~1_combout $end
+$var wire 1 y" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~1_combout $end
+$var wire 1 z" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~2_combout $end
+$var wire 1 {" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_2~0_combout $end
+$var wire 1 |" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_2_dff~q $end
+$var wire 1 }" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~0_combout $end
+$var wire 1 ~" codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_1_dff~q $end
+$var wire 1 !# codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~1_combout $end
+$var wire 1 "# codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_0_dff~q $end
+$var wire 1 ## codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~0_combout $end
+$var wire 1 $# codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q $end
+$var wire 1 %# codec|Audio_Out_Serializer|read_left_channel~combout $end
+$var wire 1 &# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~sumout $end
+$var wire 1 '# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~COUT $end
+$var wire 1 (# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~sumout $end
+$var wire 1 )# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~COUT $end
+$var wire 1 *# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~sumout $end
+$var wire 1 +# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~COUT $end
+$var wire 1 ,# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~sumout $end
+$var wire 1 -# codec|Audio_In_Deserializer|right_audio_fifo_read_space[4]~feeder_combout $end
+$var wire 1 .# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~COUT $end
+$var wire 1 /# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~sumout $end
+$var wire 1 0# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~COUT $end
+$var wire 1 1# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita6~sumout $end
+$var wire 1 2# codec|Equal1~0_combout $end
+$var wire 1 3# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~2_combout $end
+$var wire 1 4# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~3_combout $end
+$var wire 1 5# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_2~0_combout $end
+$var wire 1 6# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_2_dff~q $end
+$var wire 1 7# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~1_combout $end
+$var wire 1 8# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_0_dff~q $end
+$var wire 1 9# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~1_combout $end
+$var wire 1 :# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_1_dff~q $end
+$var wire 1 ;# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~0_combout $end
+$var wire 1 <# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q $end
+$var wire 1 =# codec|Equal1~1_combout $end
+$var wire 1 ># AUD_ADCLRCK~input_o $end
+$var wire 1 ?# codec|ADC_Left_Right_Clock_Edges|cur_test_clk~q $end
+$var wire 1 @# codec|ADC_Left_Right_Clock_Edges|last_test_clk~q $end
+$var wire 1 A# codec|done_adc_channel_sync~0_combout $end
+$var wire 1 B# codec|done_adc_channel_sync~q $end
+$var wire 1 C# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~sumout $end
+$var wire 1 D# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~COUT $end
+$var wire 1 E# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita6~sumout $end
+$var wire 1 F# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~2_combout $end
+$var wire 1 G# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~3_combout $end
+$var wire 1 H# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_2~0_combout $end
+$var wire 1 I# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_2_dff~q $end
+$var wire 1 J# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~1_combout $end
+$var wire 1 K# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_0_dff~q $end
+$var wire 1 L# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~1_combout $end
+$var wire 1 M# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_is_1_dff~q $end
+$var wire 1 N# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~0_combout $end
+$var wire 1 O# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|empty_dff~q $end
+$var wire 1 P# codec|Audio_In_Deserializer|left_audio_fifo_read_space[7]~feeder_combout $end
+$var wire 1 Q# codec|Equal0~0_combout $end
+$var wire 1 R# codec|Audio_In_Deserializer|comb~2_combout $end
+$var wire 1 S# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~0_combout $end
+$var wire 1 T# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~COUT $end
+$var wire 1 U# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~sumout $end
+$var wire 1 V# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~COUT $end
+$var wire 1 W# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~sumout $end
+$var wire 1 X# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita2~COUT $end
+$var wire 1 Y# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~COUT $end
+$var wire 1 Z# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~sumout $end
+$var wire 1 [# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita4~COUT $end
+$var wire 1 \# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita5~sumout $end
+$var wire 1 ]# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~0_combout $end
+$var wire 1 ^# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~1_combout $end
+$var wire 1 _# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|full_dff~q $end
+$var wire 1 `# codec|ADC_Left_Right_Clock_Edges|last_test_clk~DUPLICATE_q $end
+$var wire 1 a# codec|Audio_In_Deserializer|comb~0_combout $end
+$var wire 1 b# codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita3~sumout $end
+$var wire 1 c# codec|Equal0~1_combout $end
+$var wire 1 d# codec|Audio_In_Deserializer|comb~3_combout $end
+$var wire 1 e# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~0_combout $end
+$var wire 1 f# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita0~COUT $end
+$var wire 1 g# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_comb_bita1~sumout $end
+$var wire 1 h# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~0_combout $end
+$var wire 1 i# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|_~1_combout $end
+$var wire 1 j# codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|full_dff~q $end
+$var wire 1 k# codec|Audio_In_Deserializer|comb~1_combout $end
+$var wire 1 l# AUD_ADCDAT~input_o $end
+$var wire 1 m# AUD_BCLK~input_o $end
+$var wire 1 n# codec|Bit_Clock_Edges|cur_test_clk~q $end
+$var wire 1 o# codec|Bit_Clock_Edges|last_test_clk~DUPLICATE_q $end
+$var wire 1 p# codec|ADC_Left_Right_Clock_Edges|found_edge~combout $end
+$var wire 1 q# codec|Bit_Clock_Edges|falling_edge~combout $end
+$var wire 1 r# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[0]~6_combout $end
+$var wire 1 s# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[1]~7_combout $end
+$var wire 1 t# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|Add0~0_combout $end
+$var wire 1 u# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[2]~5_combout $end
+$var wire 1 v# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[3]~3_combout $end
+$var wire 1 w# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[3]~4_combout $end
+$var wire 1 x# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[4]~1_combout $end
+$var wire 1 y# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[4]~2_combout $end
+$var wire 1 z# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter[4]~0_combout $end
+$var wire 1 {# codec|Bit_Clock_Edges|last_test_clk~q $end
+$var wire 1 |# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|counting~0_combout $end
+$var wire 1 }# codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|counting~q $end
+$var wire 1 ~# codec|Audio_In_Deserializer|data_in_shift_reg[11]~0_combout $end
+$var wire 1 !$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~sumout $end
+$var wire 1 "$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|_~0_combout $end
+$var wire 1 #$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~COUT $end
+$var wire 1 $$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~sumout $end
+$var wire 1 %$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~COUT $end
+$var wire 1 &$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~sumout $end
+$var wire 1 '$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~COUT $end
+$var wire 1 ($ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~sumout $end
+$var wire 1 )$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~COUT $end
+$var wire 1 *$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~sumout $end
+$var wire 1 +$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~COUT $end
+$var wire 1 ,$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~sumout $end
+$var wire 1 -$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~COUT $end
+$var wire 1 .$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~sumout $end
+$var wire 1 /$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~0_combout $end
+$var wire 1 0$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~1_combout $end
+$var wire 1 1$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~q $end
+$var wire 1 2$ codec|read_ready~combout $end
+$var wire 1 3$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[0]~0_combout $end
+$var wire 1 4$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[0]~0_combout $end
+$var wire 1 5$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~sumout $end
+$var wire 1 6$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|_~0_combout $end
+$var wire 1 7$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[1]~1_combout $end
+$var wire 1 8$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[1]~1_combout $end
+$var wire 1 9$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~COUT $end
+$var wire 1 :$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~sumout $end
+$var wire 1 ;$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[2]~2_combout $end
+$var wire 1 <$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[2]~2_combout $end
+$var wire 1 =$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~COUT $end
+$var wire 1 >$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~sumout $end
+$var wire 1 ?$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[3]~3_combout $end
+$var wire 1 @$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[3]~3_combout $end
+$var wire 1 A$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~COUT $end
+$var wire 1 B$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~sumout $end
+$var wire 1 C$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[4]~4_combout $end
+$var wire 1 D$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[4]~4_combout $end
+$var wire 1 E$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~COUT $end
+$var wire 1 F$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~sumout $end
+$var wire 1 G$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[5]~5_combout $end
+$var wire 1 H$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[5]~5_combout $end
+$var wire 1 I$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~COUT $end
+$var wire 1 J$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita5~sumout $end
+$var wire 1 K$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[6]~6_combout $end
+$var wire 1 L$ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[6]~6_combout $end
+$var wire 1 M$ codec|Audio_In_Deserializer|data_in_shift_reg[5]~feeder_combout $end
+$var wire 1 N$ codec|Audio_In_Deserializer|data_in_shift_reg[6]~feeder_combout $end
+$var wire 1 O$ codec|Audio_In_Deserializer|data_in_shift_reg[7]~feeder_combout $end
+$var wire 1 P$ codec|Audio_In_Deserializer|data_in_shift_reg[8]~feeder_combout $end
+$var wire 1 Q$ codec|Audio_In_Deserializer|data_in_shift_reg[9]~feeder_combout $end
+$var wire 1 R$ codec|Audio_In_Deserializer|data_in_shift_reg[13]~feeder_combout $end
+$var wire 1 S$ codec|Audio_In_Deserializer|data_in_shift_reg[14]~feeder_combout $end
+$var wire 1 T$ codec|Audio_In_Deserializer|data_in_shift_reg[15]~feeder_combout $end
+$var wire 1 U$ codec|Audio_In_Deserializer|data_in_shift_reg[17]~feeder_combout $end
+$var wire 1 V$ codec|Audio_In_Deserializer|data_in_shift_reg[20]~feeder_combout $end
+$var wire 1 W$ codec|Audio_In_Deserializer|data_in_shift_reg[22]~feeder_combout $end
+$var wire 1 X$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~sumout $end
+$var wire 1 Y$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|_~0_combout $end
+$var wire 1 Z$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~COUT $end
+$var wire 1 [$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~sumout $end
+$var wire 1 \$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~COUT $end
+$var wire 1 ]$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~sumout $end
+$var wire 1 ^$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~COUT $end
+$var wire 1 _$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~sumout $end
+$var wire 1 `$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~COUT $end
+$var wire 1 a$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~sumout $end
+$var wire 1 b$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~COUT $end
+$var wire 1 c$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~sumout $end
+$var wire 1 d$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~COUT $end
+$var wire 1 e$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~sumout $end
+$var wire 1 f$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~0_combout $end
+$var wire 1 g$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~1_combout $end
+$var wire 1 h$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~q $end
+$var wire 1 i$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[0]~0_combout $end
+$var wire 1 j$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[0]~0_combout $end
+$var wire 1 k$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~sumout $end
+$var wire 1 l$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|_~0_combout $end
+$var wire 1 m$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[1]~1_combout $end
+$var wire 1 n$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[1]~1_combout $end
+$var wire 1 o$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[2]~2_combout $end
+$var wire 1 p$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~COUT $end
+$var wire 1 q$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~sumout $end
+$var wire 1 r$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[2]~2_combout $end
+$var wire 1 s$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[3]~3_combout $end
+$var wire 1 t$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~COUT $end
+$var wire 1 u$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~sumout $end
+$var wire 1 v$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[3]~3_combout $end
+$var wire 1 w$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[4]~4_combout $end
+$var wire 1 x$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~COUT $end
+$var wire 1 y$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~sumout $end
+$var wire 1 z$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[4]~4_combout $end
+$var wire 1 {$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[5]~5_combout $end
+$var wire 1 |$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~COUT $end
+$var wire 1 }$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~sumout $end
+$var wire 1 ~$ codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[5]~5_combout $end
+$var wire 1 !% codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[6]~6_combout $end
+$var wire 1 "% codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~COUT $end
+$var wire 1 #% codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita5~sumout $end
+$var wire 1 $% codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[6]~6_combout $end
+$var wire 1 %% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~sumout $end
+$var wire 1 &% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|_~0_combout $end
+$var wire 1 '% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~COUT $end
+$var wire 1 (% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~sumout $end
+$var wire 1 )% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~COUT $end
+$var wire 1 *% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~sumout $end
+$var wire 1 +% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~COUT $end
+$var wire 1 ,% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~sumout $end
+$var wire 1 -% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~COUT $end
+$var wire 1 .% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~sumout $end
+$var wire 1 /% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~COUT $end
+$var wire 1 0% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~sumout $end
+$var wire 1 1% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~COUT $end
+$var wire 1 2% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~sumout $end
+$var wire 1 3% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~0_combout $end
+$var wire 1 4% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~1_combout $end
+$var wire 1 5% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~q $end
+$var wire 1 6% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[0]~0_combout $end
+$var wire 1 7% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[0]~0_combout $end
+$var wire 1 8% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~sumout $end
+$var wire 1 9% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|_~0_combout $end
+$var wire 1 :% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[1]~1_combout $end
+$var wire 1 ;% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[1]~1_combout $end
+$var wire 1 <% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~COUT $end
+$var wire 1 =% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~sumout $end
+$var wire 1 >% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[2]~2_combout $end
+$var wire 1 ?% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[2]~2_combout $end
+$var wire 1 @% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~COUT $end
+$var wire 1 A% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~sumout $end
+$var wire 1 B% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[3]~3_combout $end
+$var wire 1 C% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[3]~3_combout $end
+$var wire 1 D% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~COUT $end
+$var wire 1 E% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~sumout $end
+$var wire 1 F% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[4]~4_combout $end
+$var wire 1 G% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[4]~4_combout $end
+$var wire 1 H% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~COUT $end
+$var wire 1 I% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~sumout $end
+$var wire 1 J% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[5]~5_combout $end
+$var wire 1 K% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[5]~5_combout $end
+$var wire 1 L% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~COUT $end
+$var wire 1 M% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita5~sumout $end
+$var wire 1 N% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[6]~6_combout $end
+$var wire 1 O% codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[6]~6_combout $end
+$var wire 1 P% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~sumout $end
+$var wire 1 Q% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|_~0_combout $end
+$var wire 1 R% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita0~COUT $end
+$var wire 1 S% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~sumout $end
+$var wire 1 T% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita1~COUT $end
+$var wire 1 U% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~sumout $end
+$var wire 1 V% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita2~COUT $end
+$var wire 1 W% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~sumout $end
+$var wire 1 X% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita3~COUT $end
+$var wire 1 Y% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~sumout $end
+$var wire 1 Z% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita4~COUT $end
+$var wire 1 [% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~sumout $end
+$var wire 1 \% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita5~COUT $end
+$var wire 1 ]% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_comb_bita6~sumout $end
+$var wire 1 ^% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~0_combout $end
+$var wire 1 _% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_will_be_1~0_combout $end
+$var wire 1 `% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_lsb~q $end
+$var wire 1 a% codec|Audio_Out_Serializer|read_left_channel~0_combout $end
+$var wire 1 b% codec|DAC_Left_Right_Clock_Edges|found_edge~0_combout $end
+$var wire 1 c% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[0]~0_combout $end
+$var wire 1 d% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[0]~0_combout $end
+$var wire 1 e% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~sumout $end
+$var wire 1 f% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|_~0_combout $end
+$var wire 1 g% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[1]~1_combout $end
+$var wire 1 h% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[1]~1_combout $end
+$var wire 1 i% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita0~COUT $end
+$var wire 1 j% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~sumout $end
+$var wire 1 k% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[2]~2_combout $end
+$var wire 1 l% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[2]~2_combout $end
+$var wire 1 m% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita1~COUT $end
+$var wire 1 n% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~sumout $end
+$var wire 1 o% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[3]~3_combout $end
+$var wire 1 p% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[3]~3_combout $end
+$var wire 1 q% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita2~COUT $end
+$var wire 1 r% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~sumout $end
+$var wire 1 s% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[4]~4_combout $end
+$var wire 1 t% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[4]~4_combout $end
+$var wire 1 u% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita3~COUT $end
+$var wire 1 v% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~sumout $end
+$var wire 1 w% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[5]~5_combout $end
+$var wire 1 x% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[5]~5_combout $end
+$var wire 1 y% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita4~COUT $end
+$var wire 1 z% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_comb_bita5~sumout $end
+$var wire 1 {% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa[6]~6_combout $end
+$var wire 1 |% codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|ram_read_address[6]~6_combout $end
+$var wire 1 }% codec|Audio_Out_Serializer|data_out_shift_reg~25_combout $end
+$var wire 1 ~% codec|Audio_Out_Serializer|data_out_shift_reg~26_combout $end
+$var wire 1 !& codec|Audio_Out_Serializer|data_out_shift_reg~24_combout $end
+$var wire 1 "& codec|Audio_Out_Serializer|data_out_shift_reg[2]~1_combout $end
+$var wire 1 #& codec|Audio_Out_Serializer|data_out_shift_reg[2]~2_combout $end
+$var wire 1 $& codec|Audio_Out_Serializer|data_out_shift_reg~23_combout $end
+$var wire 1 %& codec|Audio_Out_Serializer|data_out_shift_reg~22_combout $end
+$var wire 1 && codec|Audio_Out_Serializer|data_out_shift_reg~21_combout $end
+$var wire 1 '& codec|Audio_Out_Serializer|data_out_shift_reg~20_combout $end
+$var wire 1 (& codec|Audio_Out_Serializer|data_out_shift_reg~19_combout $end
+$var wire 1 )& codec|Audio_Out_Serializer|data_out_shift_reg~18_combout $end
+$var wire 1 *& codec|Audio_Out_Serializer|data_out_shift_reg~17_combout $end
+$var wire 1 +& codec|Audio_Out_Serializer|data_out_shift_reg~16_combout $end
+$var wire 1 ,& codec|Audio_Out_Serializer|data_out_shift_reg~15_combout $end
+$var wire 1 -& codec|Audio_Out_Serializer|data_out_shift_reg~14_combout $end
+$var wire 1 .& codec|Audio_Out_Serializer|data_out_shift_reg~13_combout $end
+$var wire 1 /& codec|Audio_Out_Serializer|data_out_shift_reg~12_combout $end
+$var wire 1 0& codec|Audio_Out_Serializer|data_out_shift_reg~11_combout $end
+$var wire 1 1& codec|Audio_Out_Serializer|data_out_shift_reg~10_combout $end
+$var wire 1 2& codec|Audio_Out_Serializer|data_out_shift_reg~9_combout $end
+$var wire 1 3& codec|Audio_Out_Serializer|data_out_shift_reg~8_combout $end
+$var wire 1 4& codec|Audio_Out_Serializer|data_out_shift_reg~7_combout $end
+$var wire 1 5& codec|Audio_Out_Serializer|data_out_shift_reg~6_combout $end
+$var wire 1 6& codec|Audio_Out_Serializer|data_out_shift_reg~5_combout $end
+$var wire 1 7& codec|Audio_Out_Serializer|data_out_shift_reg~4_combout $end
+$var wire 1 8& codec|Audio_Out_Serializer|data_out_shift_reg~3_combout $end
+$var wire 1 9& codec|Audio_Out_Serializer|data_out_shift_reg~0_combout $end
+$var wire 1 :& codec|Audio_Out_Serializer|serial_audio_out_data~feeder_combout $end
+$var wire 1 ;& codec|Audio_Out_Serializer|serial_audio_out_data~q $end
+$var wire 1 <& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [5] $end
+$var wire 1 =& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [4] $end
+$var wire 1 >& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [3] $end
+$var wire 1 ?& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [2] $end
+$var wire 1 @& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [1] $end
+$var wire 1 A& my_clock_gen|DE_Clock_Generator_Audio|auto_generated|clk [0] $end
+$var wire 1 B& codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter [4] $end
+$var wire 1 C& codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter [3] $end
+$var wire 1 D& codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter [2] $end
+$var wire 1 E& codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter [1] $end
+$var wire 1 F& codec|Audio_In_Deserializer|Audio_Out_Bit_Counter|bit_counter [0] $end
+$var wire 1 G& cfg|Auto_Initialize|data_out [7] $end
+$var wire 1 H& cfg|Auto_Initialize|data_out [6] $end
+$var wire 1 I& cfg|Auto_Initialize|data_out [5] $end
+$var wire 1 J& cfg|Auto_Initialize|data_out [4] $end
+$var wire 1 K& cfg|Auto_Initialize|data_out [3] $end
+$var wire 1 L& cfg|Auto_Initialize|data_out [2] $end
+$var wire 1 M& cfg|Auto_Initialize|data_out [1] $end
+$var wire 1 N& cfg|Auto_Initialize|data_out [0] $end
+$var wire 1 O& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [6] $end
+$var wire 1 P& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [5] $end
+$var wire 1 Q& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [4] $end
+$var wire 1 R& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [3] $end
+$var wire 1 S& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [2] $end
+$var wire 1 T& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [1] $end
+$var wire 1 U& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [0] $end
+$var wire 1 V& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [6] $end
+$var wire 1 W& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [5] $end
+$var wire 1 X& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [4] $end
+$var wire 1 Y& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [3] $end
+$var wire 1 Z& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [2] $end
+$var wire 1 [& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [1] $end
+$var wire 1 \& codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [0] $end
+$var wire 1 ]& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [6] $end
+$var wire 1 ^& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [5] $end
+$var wire 1 _& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [4] $end
+$var wire 1 `& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [3] $end
+$var wire 1 a& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [2] $end
+$var wire 1 b& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [1] $end
+$var wire 1 c& codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [0] $end
+$var wire 1 d& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [23] $end
+$var wire 1 e& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [22] $end
+$var wire 1 f& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [21] $end
+$var wire 1 g& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [20] $end
+$var wire 1 h& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [19] $end
+$var wire 1 i& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [18] $end
+$var wire 1 j& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [17] $end
+$var wire 1 k& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [16] $end
+$var wire 1 l& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [15] $end
+$var wire 1 m& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [14] $end
+$var wire 1 n& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [13] $end
+$var wire 1 o& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [12] $end
+$var wire 1 p& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [11] $end
+$var wire 1 q& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [10] $end
+$var wire 1 r& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [9] $end
+$var wire 1 s& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [8] $end
+$var wire 1 t& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [7] $end
+$var wire 1 u& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [6] $end
+$var wire 1 v& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [5] $end
+$var wire 1 w& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [4] $end
+$var wire 1 x& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [3] $end
+$var wire 1 y& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [2] $end
+$var wire 1 z& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [1] $end
+$var wire 1 {& codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [0] $end
+$var wire 1 |& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [23] $end
+$var wire 1 }& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [22] $end
+$var wire 1 ~& codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [21] $end
+$var wire 1 !' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [20] $end
+$var wire 1 "' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [19] $end
+$var wire 1 #' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [18] $end
+$var wire 1 $' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [17] $end
+$var wire 1 %' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [16] $end
+$var wire 1 &' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [15] $end
+$var wire 1 '' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [14] $end
+$var wire 1 (' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [13] $end
+$var wire 1 )' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [12] $end
+$var wire 1 *' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [11] $end
+$var wire 1 +' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [10] $end
+$var wire 1 ,' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [9] $end
+$var wire 1 -' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [8] $end
+$var wire 1 .' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [7] $end
+$var wire 1 /' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [6] $end
+$var wire 1 0' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [5] $end
+$var wire 1 1' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [4] $end
+$var wire 1 2' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [3] $end
+$var wire 1 3' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [2] $end
+$var wire 1 4' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [1] $end
+$var wire 1 5' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [0] $end
+$var wire 1 6' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [23] $end
+$var wire 1 7' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [22] $end
+$var wire 1 8' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [21] $end
+$var wire 1 9' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [20] $end
+$var wire 1 :' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [19] $end
+$var wire 1 ;' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [18] $end
+$var wire 1 <' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [17] $end
+$var wire 1 =' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [16] $end
+$var wire 1 >' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [15] $end
+$var wire 1 ?' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [14] $end
+$var wire 1 @' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [13] $end
+$var wire 1 A' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [12] $end
+$var wire 1 B' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [11] $end
+$var wire 1 C' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [10] $end
+$var wire 1 D' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [9] $end
+$var wire 1 E' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [8] $end
+$var wire 1 F' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [7] $end
+$var wire 1 G' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [6] $end
+$var wire 1 H' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [5] $end
+$var wire 1 I' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [4] $end
+$var wire 1 J' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [3] $end
+$var wire 1 K' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [2] $end
+$var wire 1 L' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [1] $end
+$var wire 1 M' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [0] $end
+$var wire 1 N' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [23] $end
+$var wire 1 O' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [22] $end
+$var wire 1 P' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [21] $end
+$var wire 1 Q' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [20] $end
+$var wire 1 R' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [19] $end
+$var wire 1 S' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [18] $end
+$var wire 1 T' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [17] $end
+$var wire 1 U' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [16] $end
+$var wire 1 V' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [15] $end
+$var wire 1 W' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [14] $end
+$var wire 1 X' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [13] $end
+$var wire 1 Y' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [12] $end
+$var wire 1 Z' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [11] $end
+$var wire 1 [' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [10] $end
+$var wire 1 \' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [9] $end
+$var wire 1 ]' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [8] $end
+$var wire 1 ^' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [7] $end
+$var wire 1 _' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [6] $end
+$var wire 1 `' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [5] $end
+$var wire 1 a' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [4] $end
+$var wire 1 b' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [3] $end
+$var wire 1 c' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [2] $end
+$var wire 1 d' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [1] $end
+$var wire 1 e' codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|q_b [0] $end
+$var wire 1 f' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [6] $end
+$var wire 1 g' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [5] $end
+$var wire 1 h' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [4] $end
+$var wire 1 i' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [3] $end
+$var wire 1 j' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [2] $end
+$var wire 1 k' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [1] $end
+$var wire 1 l' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [0] $end
+$var wire 1 m' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [6] $end
+$var wire 1 n' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [5] $end
+$var wire 1 o' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [4] $end
+$var wire 1 p' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [3] $end
+$var wire 1 q' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [2] $end
+$var wire 1 r' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [1] $end
+$var wire 1 s' codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|low_addressa [0] $end
+$var wire 1 t' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [6] $end
+$var wire 1 u' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [5] $end
+$var wire 1 v' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [4] $end
+$var wire 1 w' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [3] $end
+$var wire 1 x' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [2] $end
+$var wire 1 y' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [1] $end
+$var wire 1 z' codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [0] $end
+$var wire 1 {' cfg|I2C_Controller|current_bit [2] $end
+$var wire 1 |' cfg|I2C_Controller|current_bit [1] $end
+$var wire 1 }' cfg|I2C_Controller|current_bit [0] $end
+$var wire 1 ~' codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [5] $end
+$var wire 1 !( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [4] $end
+$var wire 1 "( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [3] $end
+$var wire 1 #( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [2] $end
+$var wire 1 $( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [1] $end
+$var wire 1 %( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [0] $end
+$var wire 1 &( cfg|num_bits_to_transfer [2] $end
+$var wire 1 '( cfg|num_bits_to_transfer [1] $end
+$var wire 1 (( cfg|num_bits_to_transfer [0] $end
+$var wire 1 )( cfg|I2C_Controller|current_byte [7] $end
+$var wire 1 *( cfg|I2C_Controller|current_byte [6] $end
+$var wire 1 +( cfg|I2C_Controller|current_byte [5] $end
+$var wire 1 ,( cfg|I2C_Controller|current_byte [4] $end
+$var wire 1 -( cfg|I2C_Controller|current_byte [3] $end
+$var wire 1 .( cfg|I2C_Controller|current_byte [2] $end
+$var wire 1 /( cfg|I2C_Controller|current_byte [1] $end
+$var wire 1 0( cfg|I2C_Controller|current_byte [0] $end
+$var wire 1 1( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [6] $end
+$var wire 1 2( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [5] $end
+$var wire 1 3( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [4] $end
+$var wire 1 4( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [3] $end
+$var wire 1 5( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [2] $end
+$var wire 1 6( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [1] $end
+$var wire 1 7( codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [0] $end
+$var wire 1 8( codec|Audio_Out_Serializer|right_channel_fifo_write_space [7] $end
+$var wire 1 9( codec|Audio_Out_Serializer|right_channel_fifo_write_space [6] $end
+$var wire 1 :( codec|Audio_Out_Serializer|right_channel_fifo_write_space [5] $end
+$var wire 1 ;( codec|Audio_Out_Serializer|right_channel_fifo_write_space [4] $end
+$var wire 1 <( codec|Audio_Out_Serializer|right_channel_fifo_write_space [3] $end
+$var wire 1 =( codec|Audio_Out_Serializer|right_channel_fifo_write_space [2] $end
+$var wire 1 >( codec|Audio_Out_Serializer|right_channel_fifo_write_space [1] $end
+$var wire 1 ?( codec|Audio_Out_Serializer|right_channel_fifo_write_space [0] $end
+$var wire 1 @( codec|Audio_Out_Serializer|left_channel_fifo_write_space [7] $end
+$var wire 1 A( codec|Audio_Out_Serializer|left_channel_fifo_write_space [6] $end
+$var wire 1 B( codec|Audio_Out_Serializer|left_channel_fifo_write_space [5] $end
+$var wire 1 C( codec|Audio_Out_Serializer|left_channel_fifo_write_space [4] $end
+$var wire 1 D( codec|Audio_Out_Serializer|left_channel_fifo_write_space [3] $end
+$var wire 1 E( codec|Audio_Out_Serializer|left_channel_fifo_write_space [2] $end
+$var wire 1 F( codec|Audio_Out_Serializer|left_channel_fifo_write_space [1] $end
+$var wire 1 G( codec|Audio_Out_Serializer|left_channel_fifo_write_space [0] $end
+$var wire 1 H( cfg|Auto_Initialize|rom_address_counter [5] $end
+$var wire 1 I( cfg|Auto_Initialize|rom_address_counter [4] $end
+$var wire 1 J( cfg|Auto_Initialize|rom_address_counter [3] $end
+$var wire 1 K( cfg|Auto_Initialize|rom_address_counter [2] $end
+$var wire 1 L( cfg|Auto_Initialize|rom_address_counter [1] $end
+$var wire 1 M( cfg|Auto_Initialize|rom_address_counter [0] $end
+$var wire 1 N( cfg|Clock_Generator_400KHz|clk_counter [10] $end
+$var wire 1 O( cfg|Clock_Generator_400KHz|clk_counter [9] $end
+$var wire 1 P( cfg|Clock_Generator_400KHz|clk_counter [8] $end
+$var wire 1 Q( cfg|Clock_Generator_400KHz|clk_counter [7] $end
+$var wire 1 R( cfg|Clock_Generator_400KHz|clk_counter [6] $end
+$var wire 1 S( cfg|Clock_Generator_400KHz|clk_counter [5] $end
+$var wire 1 T( cfg|Clock_Generator_400KHz|clk_counter [4] $end
+$var wire 1 U( cfg|Clock_Generator_400KHz|clk_counter [3] $end
+$var wire 1 V( cfg|Clock_Generator_400KHz|clk_counter [2] $end
+$var wire 1 W( cfg|Clock_Generator_400KHz|clk_counter [1] $end
+$var wire 1 X( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [5] $end
+$var wire 1 Y( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [4] $end
+$var wire 1 Z( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [3] $end
+$var wire 1 [( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [2] $end
+$var wire 1 \( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [1] $end
+$var wire 1 ]( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [0] $end
+$var wire 1 ^( cfg|data_to_transfer [7] $end
+$var wire 1 _( cfg|data_to_transfer [6] $end
+$var wire 1 `( cfg|data_to_transfer [5] $end
+$var wire 1 a( cfg|data_to_transfer [4] $end
+$var wire 1 b( cfg|data_to_transfer [3] $end
+$var wire 1 c( cfg|data_to_transfer [2] $end
+$var wire 1 d( cfg|data_to_transfer [1] $end
+$var wire 1 e( cfg|data_to_transfer [0] $end
+$var wire 1 f( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [6] $end
+$var wire 1 g( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [5] $end
+$var wire 1 h( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [4] $end
+$var wire 1 i( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [3] $end
+$var wire 1 j( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [2] $end
+$var wire 1 k( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [1] $end
+$var wire 1 l( codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [0] $end
+$var wire 1 m( codec|Audio_In_Deserializer|data_in_shift_reg [24] $end
+$var wire 1 n( codec|Audio_In_Deserializer|data_in_shift_reg [23] $end
+$var wire 1 o( codec|Audio_In_Deserializer|data_in_shift_reg [22] $end
+$var wire 1 p( codec|Audio_In_Deserializer|data_in_shift_reg [21] $end
+$var wire 1 q( codec|Audio_In_Deserializer|data_in_shift_reg [20] $end
+$var wire 1 r( codec|Audio_In_Deserializer|data_in_shift_reg [19] $end
+$var wire 1 s( codec|Audio_In_Deserializer|data_in_shift_reg [18] $end
+$var wire 1 t( codec|Audio_In_Deserializer|data_in_shift_reg [17] $end
+$var wire 1 u( codec|Audio_In_Deserializer|data_in_shift_reg [16] $end
+$var wire 1 v( codec|Audio_In_Deserializer|data_in_shift_reg [15] $end
+$var wire 1 w( codec|Audio_In_Deserializer|data_in_shift_reg [14] $end
+$var wire 1 x( codec|Audio_In_Deserializer|data_in_shift_reg [13] $end
+$var wire 1 y( codec|Audio_In_Deserializer|data_in_shift_reg [12] $end
+$var wire 1 z( codec|Audio_In_Deserializer|data_in_shift_reg [11] $end
+$var wire 1 {( codec|Audio_In_Deserializer|data_in_shift_reg [10] $end
+$var wire 1 |( codec|Audio_In_Deserializer|data_in_shift_reg [9] $end
+$var wire 1 }( codec|Audio_In_Deserializer|data_in_shift_reg [8] $end
+$var wire 1 ~( codec|Audio_In_Deserializer|data_in_shift_reg [7] $end
+$var wire 1 !) codec|Audio_In_Deserializer|data_in_shift_reg [6] $end
+$var wire 1 ") codec|Audio_In_Deserializer|data_in_shift_reg [5] $end
+$var wire 1 #) codec|Audio_In_Deserializer|data_in_shift_reg [4] $end
+$var wire 1 $) codec|Audio_In_Deserializer|data_in_shift_reg [3] $end
+$var wire 1 %) codec|Audio_In_Deserializer|data_in_shift_reg [2] $end
+$var wire 1 &) codec|Audio_In_Deserializer|data_in_shift_reg [1] $end
+$var wire 1 ') codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [6] $end
+$var wire 1 () codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [5] $end
+$var wire 1 )) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [4] $end
+$var wire 1 *) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [3] $end
+$var wire 1 +) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [2] $end
+$var wire 1 ,) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [1] $end
+$var wire 1 -) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [0] $end
+$var wire 1 .) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [5] $end
+$var wire 1 /) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [4] $end
+$var wire 1 0) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [3] $end
+$var wire 1 1) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [2] $end
+$var wire 1 2) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [1] $end
+$var wire 1 3) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [0] $end
+$var wire 1 4) codec|Audio_In_Deserializer|left_audio_fifo_read_space [7] $end
+$var wire 1 5) codec|Audio_In_Deserializer|left_audio_fifo_read_space [6] $end
+$var wire 1 6) codec|Audio_In_Deserializer|left_audio_fifo_read_space [5] $end
+$var wire 1 7) codec|Audio_In_Deserializer|left_audio_fifo_read_space [4] $end
+$var wire 1 8) codec|Audio_In_Deserializer|left_audio_fifo_read_space [3] $end
+$var wire 1 9) codec|Audio_In_Deserializer|left_audio_fifo_read_space [2] $end
+$var wire 1 :) codec|Audio_In_Deserializer|left_audio_fifo_read_space [1] $end
+$var wire 1 ;) codec|Audio_In_Deserializer|left_audio_fifo_read_space [0] $end
+$var wire 1 <) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [6] $end
+$var wire 1 =) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [5] $end
+$var wire 1 >) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [4] $end
+$var wire 1 ?) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [3] $end
+$var wire 1 @) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [2] $end
+$var wire 1 A) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [1] $end
+$var wire 1 B) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [0] $end
+$var wire 1 C) codec|Audio_In_Deserializer|right_audio_fifo_read_space [7] $end
+$var wire 1 D) codec|Audio_In_Deserializer|right_audio_fifo_read_space [6] $end
+$var wire 1 E) codec|Audio_In_Deserializer|right_audio_fifo_read_space [5] $end
+$var wire 1 F) codec|Audio_In_Deserializer|right_audio_fifo_read_space [4] $end
+$var wire 1 G) codec|Audio_In_Deserializer|right_audio_fifo_read_space [3] $end
+$var wire 1 H) codec|Audio_In_Deserializer|right_audio_fifo_read_space [2] $end
+$var wire 1 I) codec|Audio_In_Deserializer|right_audio_fifo_read_space [1] $end
+$var wire 1 J) codec|Audio_In_Deserializer|right_audio_fifo_read_space [0] $end
+$var wire 1 K) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [5] $end
+$var wire 1 L) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [4] $end
+$var wire 1 M) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [3] $end
+$var wire 1 N) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [2] $end
+$var wire 1 O) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [1] $end
+$var wire 1 P) codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|rd_ptr_msb|counter_reg_bit [0] $end
+$var wire 1 Q) codec|Audio_Out_Serializer|data_out_shift_reg [24] $end
+$var wire 1 R) codec|Audio_Out_Serializer|data_out_shift_reg [23] $end
+$var wire 1 S) codec|Audio_Out_Serializer|data_out_shift_reg [22] $end
+$var wire 1 T) codec|Audio_Out_Serializer|data_out_shift_reg [21] $end
+$var wire 1 U) codec|Audio_Out_Serializer|data_out_shift_reg [20] $end
+$var wire 1 V) codec|Audio_Out_Serializer|data_out_shift_reg [19] $end
+$var wire 1 W) codec|Audio_Out_Serializer|data_out_shift_reg [18] $end
+$var wire 1 X) codec|Audio_Out_Serializer|data_out_shift_reg [17] $end
+$var wire 1 Y) codec|Audio_Out_Serializer|data_out_shift_reg [16] $end
+$var wire 1 Z) codec|Audio_Out_Serializer|data_out_shift_reg [15] $end
+$var wire 1 [) codec|Audio_Out_Serializer|data_out_shift_reg [14] $end
+$var wire 1 \) codec|Audio_Out_Serializer|data_out_shift_reg [13] $end
+$var wire 1 ]) codec|Audio_Out_Serializer|data_out_shift_reg [12] $end
+$var wire 1 ^) codec|Audio_Out_Serializer|data_out_shift_reg [11] $end
+$var wire 1 _) codec|Audio_Out_Serializer|data_out_shift_reg [10] $end
+$var wire 1 `) codec|Audio_Out_Serializer|data_out_shift_reg [9] $end
+$var wire 1 a) codec|Audio_Out_Serializer|data_out_shift_reg [8] $end
+$var wire 1 b) codec|Audio_Out_Serializer|data_out_shift_reg [7] $end
+$var wire 1 c) codec|Audio_Out_Serializer|data_out_shift_reg [6] $end
+$var wire 1 d) codec|Audio_Out_Serializer|data_out_shift_reg [5] $end
+$var wire 1 e) codec|Audio_Out_Serializer|data_out_shift_reg [4] $end
+$var wire 1 f) codec|Audio_Out_Serializer|data_out_shift_reg [3] $end
+$var wire 1 g) codec|Audio_Out_Serializer|data_out_shift_reg [2] $end
+$var wire 1 h) codec|Audio_Out_Serializer|data_out_shift_reg [1] $end
+$var wire 1 i) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [6] $end
+$var wire 1 j) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [5] $end
+$var wire 1 k) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [4] $end
+$var wire 1 l) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [3] $end
+$var wire 1 m) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [2] $end
+$var wire 1 n) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [1] $end
+$var wire 1 o) codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|wr_ptr|counter_reg_bit [0] $end
+$var wire 1 p) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [6] $end
+$var wire 1 q) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [5] $end
+$var wire 1 r) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [4] $end
+$var wire 1 s) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [3] $end
+$var wire 1 t) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [2] $end
+$var wire 1 u) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [1] $end
+$var wire 1 v) codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|usedw_counter|counter_reg_bit [0] $end
+$var wire 1 w) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [39] $end
+$var wire 1 x) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [38] $end
+$var wire 1 y) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [37] $end
+$var wire 1 z) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [36] $end
+$var wire 1 {) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 |) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 }) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 ~) codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 !* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 "* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 #* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 $* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 %* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 &* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 '* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 (* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 )* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 ** codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 +* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 ,* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 -* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 .* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 /* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 0* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 1* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 2* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 3* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 4* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 5* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 6* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 7* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 8* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 9* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 :* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 ;* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 <* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 =* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 >* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 ?* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 @* codec|Audio_Out_Serializer|Audio_Out_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 A* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [39] $end
+$var wire 1 B* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [38] $end
+$var wire 1 C* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [37] $end
+$var wire 1 D* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [36] $end
+$var wire 1 E* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 F* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 G* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 H* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 I* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 J* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 K* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 L* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 M* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 N* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 O* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 P* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 Q* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 R* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 S* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 T* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 U* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 V* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 W* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 X* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 Y* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 Z* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 [* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 \* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 ]* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 ^* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 _* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 `* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 a* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 b* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 c* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 d* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 e* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 f* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 g* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 h* codec|Audio_Out_Serializer|Audio_Out_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 i* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [39] $end
+$var wire 1 j* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [38] $end
+$var wire 1 k* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [37] $end
+$var wire 1 l* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [36] $end
+$var wire 1 m* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 n* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 o* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 p* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 q* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 r* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 s* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 t* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 u* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 v* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 w* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 x* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 y* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 z* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 {* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 |* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 }* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 ~* codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 !+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 "+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 #+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 $+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 %+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 &+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 '+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 (+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 )+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 *+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 ++ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 ,+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 -+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 .+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 /+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 0+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 1+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 2+ codec|Audio_In_Deserializer|Audio_In_Left_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 3+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [39] $end
+$var wire 1 4+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [38] $end
+$var wire 1 5+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [37] $end
+$var wire 1 6+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [36] $end
+$var wire 1 7+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 8+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 9+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 :+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 ;+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 <+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 =+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 >+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 ?+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 @+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 A+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 B+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 C+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 D+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 E+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 F+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 G+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 H+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 I+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 J+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 K+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 L+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 M+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 N+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 O+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 P+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 Q+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 R+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 S+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 T+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 U+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 V+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 W+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 X+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 Y+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 Z+ codec|Audio_In_Deserializer|Audio_In_Right_Channel_FIFO|Sync_FIFO|auto_generated|dpfifo|FIFOram|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 [+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [7] $end
+$var wire 1 \+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [6] $end
+$var wire 1 ]+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [5] $end
+$var wire 1 ^+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [4] $end
+$var wire 1 _+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [3] $end
+$var wire 1 `+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [2] $end
+$var wire 1 a+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [1] $end
+$var wire 1 b+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_VCOPH_bus [0] $end
+$var wire 1 c+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [7] $end
+$var wire 1 d+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [6] $end
+$var wire 1 e+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [5] $end
+$var wire 1 f+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [4] $end
+$var wire 1 g+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [3] $end
+$var wire 1 h+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [2] $end
+$var wire 1 i+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [1] $end
+$var wire 1 j+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~FRACTIONAL_PLL_MHI_bus [0] $end
+$var wire 1 k+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [8] $end
+$var wire 1 l+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [7] $end
+$var wire 1 m+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [6] $end
+$var wire 1 n+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [5] $end
+$var wire 1 o+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [4] $end
+$var wire 1 p+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [3] $end
+$var wire 1 q+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [2] $end
+$var wire 1 r+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [1] $end
+$var wire 1 s+ my_clock_gen|DE_Clock_Generator_Audio|auto_generated|generic_pll1~PLL_RECONFIG_SHIFTEN_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+x"
+x#
+x$
+x%
+0&
+x'
+bx0 (
+0)
+0*
+0+
+x,
+0-
+1.
+x/
+10
+11
+12
+x3
+x4
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+1L
+0M
+0N
+0O
+1P
+0Q
+0R
+0S
+1T
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+1x
+0y
+1z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+1.!
+0/!
+00!
+11!
+12!
+13!
+14!
+05!
+16!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+1>!
+0?!
+0@!
+0A!
+1B!
+0C!
+1D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+1K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+1S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+1\!
+0]!
+0^!
+0_!
+0`!
+0a!
+xb!
+zc!
+xd!
+ze!
+zf!
+zg!
+zh!
+zi!
+zj!
+xk!
+zl!
+xm!
+zn!
+xo!
+0p!
+zq!
+xr!
+zs!
+0t!
+0u!
+0v!
+0w!
+1x!
+1y!
+1z!
+1{!
+0|!
+x}!
+0~!
+0!"
+0""
+0#"
+1$"
+1%"
+1&"
+0'"
+1("
+0)"
+1*"
+0+"
+1,"
+0-"
+1."
+0/"
+10"
+11"
+12"
+13"
+14"
+15"
+06"
+07"
+18"
+09"
+0:"
+0;"
+0<"
+1="
+1>"
+1?"
+1@"
+0A"
+1B"
+0C"
+1D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+1K"
+0L"
+1M"
+1N"
+0O"
+0P"
+1Q"
+1R"
+0S"
+0T"
+1U"
+1V"
+0W"
+0X"
+1Y"
+0Z"
+1["
+1\"
+1]"
+1^"
+1_"
+0`"
+0a"
+1b"
+1c"
+1d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+1p"
+0q"
+1r"
+0s"
+0t"
+0u"
+0v"
+0w"
+1x"
+1y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+0$#
+0%#
+1&#
+0'#
+1(#
+0)#
+1*#
+0+#
+1,#
+0-#
+0.#
+1/#
+00#
+11#
+12#
+13#
+04#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+1=#
+x>#
+0?#
+0@#
+0A#
+0B#
+1C#
+0D#
+1E#
+1F#
+0G#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+1Q#
+0R#
+1S#
+0T#
+1U#
+0V#
+1W#
+0X#
+0Y#
+1Z#
+0[#
+1\#
+0]#
+0^#
+0_#
+0`#
+0a#
+1b#
+1c#
+0d#
+1e#
+0f#
+1g#
+0h#
+0i#
+0j#
+0k#
+0l#
+xm#
+0n#
+0o#
+0p#
+0q#
+0r#
+0s#
+1t#
+0u#
+1v#
+0w#
+1x#
+0y#
+1z#
+0{#
+0|#
+0}#
+1~#
+1!$
+1"$
+0#$
+0$$
+0%$
+0&$
+0'$
+0($
+0)$
+0*$
+0+$
+0,$
+0-$
+0.$
+0/$
+10$
+01$
+12$
+03$
+04$
+15$
+16$
+07$
+08$
+09$
+0:$
+0;$
+0<$
+0=$
+0>$
+0?$
+0@$
+0A$
+0B$
+0C$
+0D$
+0E$
+0F$
+0G$
+0H$
+0I$
+0J$
+0K$
+0L$
+0M$
+0N$
+0O$
+0P$
+0Q$
+0R$
+0S$
+0T$
+0U$
+0V$
+0W$
+1X$
+1Y$
+0Z$
+0[$
+0\$
+0]$
+0^$
+0_$
+0`$
+0a$
+0b$
+0c$
+0d$
+0e$
+0f$
+1g$
+0h$
+0i$
+0j$
+1k$
+1l$
+0m$
+0n$
+0o$
+0p$
+0q$
+0r$
+0s$
+0t$
+0u$
+0v$
+0w$
+0x$
+0y$
+0z$
+0{$
+0|$
+0}$
+0~$
+0!%
+0"%
+0#%
+0$%
+1%%
+1&%
+0'%
+0(%
+0)%
+0*%
+0+%
+0,%
+0-%
+0.%
+0/%
+00%
+01%
+02%
+03%
+14%
+05%
+06%
+07%
+18%
+19%
+0:%
+0;%
+0<%
+0=%
+0>%
+0?%
+0@%
+0A%
+0B%
+0C%
+0D%
+0E%
+0F%
+0G%
+0H%
+0I%
+0J%
+0K%
+0L%
+0M%
+0N%
+0O%
+1P%
+1Q%
+0R%
+0S%
+0T%
+0U%
+0V%
+0W%
+0X%
+0Y%
+0Z%
+0[%
+0\%
+0]%
+0^%
+1_%
+0`%
+0a%
+0b%
+0c%
+0d%
+1e%
+1f%
+0g%
+0h%
+0i%
+0j%
+0k%
+0l%
+0m%
+0n%
+0o%
+0p%
+0q%
+0r%
+0s%
+0t%
+0u%
+0v%
+0w%
+0x%
+0y%
+0z%
+0{%
+0|%
+0}%
+0~%
+0!&
+1"&
+1#&
+0$&
+0%&
+0&&
+0'&
+0(&
+0)&
+0*&
+0+&
+0,&
+0-&
+0.&
+0/&
+00&
+01&
+02&
+03&
+04&
+05&
+06&
+07&
+08&
+09&
+0:&
+0;&
+0A&
+z@&
+z?&
+z>&
+z=&
+z<&
+0F&
+0E&
+0D&
+0C&
+0B&
+0N&
+0M&
+0L&
+0K&
+0J&
+0I&
+0H&
+0G&
+0U&
+0T&
+0S&
+0R&
+0Q&
+0P&
+0O&
+0\&
+0[&
+0Z&
+0Y&
+0X&
+0W&
+0V&
+0c&
+0b&
+0a&
+0`&
+0_&
+0^&
+0]&
+0{&
+0z&
+0y&
+0x&
+0w&
+0v&
+0u&
+0t&
+0s&
+0r&
+0q&
+0p&
+0o&
+0n&
+0m&
+0l&
+0k&
+0j&
+0i&
+0h&
+0g&
+0f&
+0e&
+0d&
+05'
+04'
+03'
+02'
+01'
+00'
+0/'
+0.'
+0-'
+0,'
+0+'
+0*'
+0)'
+0('
+0''
+0&'
+0%'
+0$'
+0#'
+0"'
+0!'
+0~&
+0}&
+0|&
+0M'
+0L'
+0K'
+0J'
+0I'
+0H'
+0G'
+0F'
+0E'
+0D'
+0C'
+0B'
+0A'
+0@'
+0?'
+0>'
+0='
+0<'
+0;'
+0:'
+09'
+08'
+07'
+06'
+0e'
+0d'
+0c'
+0b'
+0a'
+0`'
+0_'
+0^'
+0]'
+0\'
+0['
+0Z'
+0Y'
+0X'
+0W'
+0V'
+0U'
+0T'
+0S'
+0R'
+0Q'
+0P'
+0O'
+0N'
+0l'
+0k'
+0j'
+0i'
+0h'
+0g'
+0f'
+0s'
+0r'
+0q'
+0p'
+0o'
+0n'
+0m'
+0z'
+0y'
+0x'
+0w'
+0v'
+0u'
+0t'
+0}'
+0|'
+0{'
+0%(
+0$(
+0#(
+0"(
+0!(
+0~'
+0((
+z'(
+z&(
+00(
+0/(
+0.(
+0-(
+0,(
+0+(
+0*(
+0)(
+07(
+06(
+05(
+04(
+03(
+02(
+01(
+0?(
+0>(
+0=(
+0<(
+0;(
+0:(
+09(
+08(
+0G(
+0F(
+0E(
+0D(
+0C(
+0B(
+0A(
+0@(
+0M(
+0L(
+0K(
+0J(
+0I(
+0H(
+0W(
+0V(
+0U(
+0T(
+0S(
+0R(
+0Q(
+0P(
+0O(
+0N(
+0](
+0\(
+0[(
+0Z(
+0Y(
+0X(
+0e(
+0d(
+0c(
+0b(
+0a(
+0`(
+0_(
+0^(
+0l(
+0k(
+0j(
+0i(
+0h(
+0g(
+0f(
+0&)
+0%)
+0$)
+0#)
+0")
+0!)
+0~(
+0}(
+0|(
+0{(
+0z(
+0y(
+0x(
+0w(
+0v(
+0u(
+0t(
+0s(
+0r(
+0q(
+0p(
+0o(
+0n(
+0m(
+0-)
+0,)
+0+)
+0*)
+0))
+0()
+0')
+03)
+02)
+01)
+00)
+0/)
+0.)
+0;)
+0:)
+09)
+08)
+07)
+06)
+05)
+04)
+0B)
+0A)
+0@)
+0?)
+0>)
+0=)
+0<)
+0J)
+0I)
+0H)
+0G)
+0F)
+0E)
+0D)
+0C)
+0P)
+0O)
+0N)
+0M)
+0L)
+0K)
+0h)
+0g)
+0f)
+0e)
+0d)
+0c)
+0b)
+0a)
+0`)
+0_)
+0^)
+0])
+0\)
+0[)
+0Z)
+0Y)
+0X)
+0W)
+0V)
+0U)
+0T)
+0S)
+0R)
+0Q)
+0o)
+0n)
+0m)
+0l)
+0k)
+0j)
+0i)
+0v)
+0u)
+0t)
+0s)
+0r)
+0q)
+0p)
+0@*
+0?*
+0>*
+0=*
+0<*
+0;*
+0:*
+09*
+08*
+07*
+06*
+05*
+04*
+03*
+02*
+01*
+00*
+0/*
+0.*
+0-*
+0,*
+0+*
+0**
+0)*
+0(*
+0'*
+0&*
+0%*
+0$*
+0#*
+0"*
+0!*
+0~)
+0})
+0|)
+0{)
+0z)
+0y)
+0x)
+0w)
+0h*
+0g*
+0f*
+0e*
+0d*
+0c*
+0b*
+0a*
+0`*
+0_*
+0^*
+0]*
+0\*
+0[*
+0Z*
+0Y*
+0X*
+0W*
+0V*
+0U*
+0T*
+0S*
+0R*
+0Q*
+0P*
+0O*
+0N*
+0M*
+0L*
+0K*
+0J*
+0I*
+0H*
+0G*
+0F*
+0E*
+0D*
+0C*
+0B*
+0A*
+02+
+01+
+00+
+0/+
+0.+
+0-+
+0,+
+0++
+0*+
+0)+
+0(+
+0'+
+0&+
+0%+
+0$+
+0#+
+0"+
+0!+
+0~*
+0}*
+0|*
+0{*
+0z*
+0y*
+0x*
+0w*
+0v*
+0u*
+0t*
+0s*
+0r*
+0q*
+0p*
+0o*
+0n*
+0m*
+0l*
+0k*
+0j*
+0i*
+0Z+
+0Y+
+0X+
+0W+
+0V+
+0U+
+0T+
+0S+
+0R+
+0Q+
+0P+
+0O+
+0N+
+0M+
+0L+
+0K+
+0J+
+0I+
+0H+
+0G+
+0F+
+0E+
+0D+
+0C+
+0B+
+0A+
+0@+
+0?+
+0>+
+0=+
+0<+
+0;+
+0:+
+09+
+08+
+07+
+06+
+05+
+04+
+03+
+0b+
+0a+
+0`+
+0_+
+1^+
+1]+
+1\+
+1[+
+zj+
+zi+
+zh+
+zg+
+zf+
+ze+
+zd+
+zc+
+xs+
+xr+
+xq+
+xp+
+xo+
+xn+
+xm+
+xl+
+xk+
+$end
+#10000
+1&
+16
+17
+xn#
+x?#
+x~!
+xb%
+xv#
+xp#
+x|#
+xA#
+#20000
+1!
+0&
+1l#
+06
+07
+#30000
+1&
+16
+17
+x{#
+xo#
+x`#
+x@#
+x!"
+xq#
+x""
+#40000
+0!
+0&
+0l#
+06
+07
+#50000
+1&
+16
+17
+#60000
+1!
+0&
+1l#
+06
+07
+#70000
+1&
+16
+17
+#80000
+0!
+0&
+0l#
+06
+07
+#90000
+1&
+16
+17
+#100000
+1!
+0&
+1l#
+06
+07
+#110000
+1&
+16
+17
+#120000
+0!
+0&
+0l#
+06
+07
+#130000
+1&
+16
+17
+#140000
+1!
+0&
+1l#
+06
+07
+#150000
+1&
+16
+17
+#160000
+0!
+0&
+0l#
+06
+07
+#170000
+1&
+16
+17
+#180000
+1!
+0&
+1l#
+06
+07
+#190000
+1&
+16
+17
+#200000
+0!
+0&
+0l#
+06
+07
+#210000
+1&
+16
+17
+#220000
+1!
+0&
+1l#
+06
+07
+#230000
+1&
+16
+17
+#240000
+0!
+0&
+0l#
+06
+07
+#250000
+1&
+16
+17
+#260000
+1!
+0&
+1l#
+06
+07
+#270000
+1&
+16
+17
+#280000
+0!
+0&
+0l#
+06
+07
+#290000
+1&
+16
+17
+#300000
+1!
+0&
+1l#
+06
+07
+#310000
+1&
+16
+17
+#320000
+0!
+0&
+0l#
+06
+07
+#330000
+1&
+16
+17
+#340000
+1!
+0&
+1l#
+06
+07
+#350000
+1&
+16
+17
+#360000
+0!
+0&
+0l#
+06
+07
+#370000
+1&
+16
+17
+#380000
+1!
+0&
+1l#
+06
+07
+#390000
+1&
+16
+17
+#400000
+0!
+0&
+0l#
+06
+07
+#410000
+1&
+16
+17
+#420000
+1!
+0&
+1l#
+06
+07
+#430000
+1&
+16
+17
+#440000
+0!
+0&
+0l#
+06
+07
+#450000
+1&
+16
+17
+#460000
+1!
+0&
+1l#
+06
+07
+#470000
+1&
+16
+17
+#480000
+0!
+0&
+0l#
+06
+07
+#490000
+1&
+16
+17
+#500000
+1!
+0&
+1l#
+06
+07
+#510000
+1&
+16
+17
+#520000
+0!
+0&
+0l#
+06
+07
+#530000
+1&
+16
+17
+#540000
+1!
+0&
+1l#
+06
+07
+#550000
+1&
+16
+17
+#560000
+0!
+0&
+0l#
+06
+07
+#570000
+1&
+16
+17
+#580000
+1!
+0&
+1l#
+06
+07
+#590000
+1&
+16
+17
+#600000
+0!
+0&
+0l#
+06
+07
+#610000
+1&
+16
+17
+#620000
+1!
+0&
+1l#
+06
+07
+#630000
+1&
+16
+17
+#640000
+0!
+0&
+0l#
+06
+07
+#650000
+1&
+16
+17
+#660000
+1!
+0&
+1l#
+06
+07
+#670000
+1&
+16
+17
+#680000
+0!
+0&
+0l#
+06
+07
+#690000
+1&
+16
+17
+#700000
+1!
+0&
+1l#
+06
+07
+#710000
+1&
+16
+17
+#720000
+0!
+0&
+0l#
+06
+07
+#730000
+1&
+16
+17
+#740000
+1!
+0&
+1l#
+06
+07
+#750000
+1&
+16
+17
+#760000
+0!
+0&
+0l#
+06
+07
+#770000
+1&
+16
+17
+#780000
+1!
+0&
+1l#
+06
+07
+#790000
+1&
+16
+17
+#800000
+0!
+0&
+0l#
+06
+07
+#810000
+1&
+16
+17
+#820000
+1!
+0&
+1l#
+06
+07
+#830000
+1&
+16
+17
+#840000
+0!
+0&
+0l#
+06
+07
+#850000
+1&
+16
+17
+#860000
+1!
+0&
+1l#
+06
+07
+#870000
+1&
+16
+17
+#880000
+0!
+0&
+0l#
+06
+07
+#890000
+1&
+16
+17
+#900000
+1!
+0&
+1l#
+06
+07
+#910000
+1&
+16
+17
+#920000
+0!
+0&
+0l#
+06
+07
+#930000
+1&
+16
+17
+#940000
+1!
+0&
+1l#
+06
+07
+#950000
+1&
+16
+17
+#960000
+0!
+0&
+0l#
+06
+07
+#970000
+1&
+16
+17
+#980000
+1!
+0&
+1l#
+06
+07
+#990000
+1&
+16
+17
+#1000000
