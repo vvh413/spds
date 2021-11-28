@@ -1,5 +1,5 @@
 Flow report for dsp
-Mon Nov 22 21:13:13 2021
+Sun Nov 28 20:14:53 2021
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 22 21:13:13 2021       ;
+; Flow Status                     ; Successful - Sun Nov 28 20:14:53 2021       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; dsp                                         ;
 ; Top-level Entity Name           ; part1                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 244 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 297                                         ;
-; Total pins                      ; 22 / 457 ( 5 % )                            ;
+; Logic utilization (in ALMs)     ; 257 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 353                                         ;
+; Total pins                      ; 30 / 457 ( 7 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 12,288 / 4,065,280 ( < 1 % )                ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/22/2021 21:12:19 ;
+; Start date & time ; 11/28/2021 20:12:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; dsp                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 49410874775474.163760473932552         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 198112243723801.163811955912012        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -104,12 +104,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 560 MB              ; 00:00:19                           ;
-; Fitter               ; 00:00:30     ; 1.1                     ; 2814 MB             ; 00:01:50                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 508 MB              ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.6                     ; 1041 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 788 MB              ; 00:00:01                           ;
-; Total                ; 00:00:51     ; --                      ; --                  ; 00:02:20                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4901 MB             ; 00:00:14                           ;
+; Fitter               ; 00:01:50     ; 1.0                     ; 7333 MB             ; 00:08:41                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4846 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.6                     ; 5306 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4835 MB             ; 00:00:01                           ;
+; Total                ; 00:02:10     ; --                      ; --                  ; 00:09:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,11 +118,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; rat              ; Arch Linux ; Arch Linux ; x86_64         ;
-; Fitter               ; rat              ; Arch Linux ; Arch Linux ; x86_64         ;
-; Assembler            ; rat              ; Arch Linux ; Arch Linux ; x86_64         ;
-; Timing Analyzer      ; rat              ; Arch Linux ; Arch Linux ; x86_64         ;
-; EDA Netlist Writer   ; rat              ; Arch Linux ; Arch Linux ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-MR0TNEU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-MR0TNEU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-MR0TNEU  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-MR0TNEU  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-MR0TNEU  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

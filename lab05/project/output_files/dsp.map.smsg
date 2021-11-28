@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at display_volume.v(7): always construct contains both blocking and non-blocking assignments File: D:/course4/spds-lab05/lab05/src/display_volume.v Line: 7

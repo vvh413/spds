@@ -1,5 +1,5 @@
 module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XCK, 
-		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
+		        AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT, LEDR);
 
 	input CLOCK_50, CLOCK2_50;
 	input [1:0] KEY;
@@ -12,6 +12,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	input AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK;
 	input AUD_ADCDAT;
 	output AUD_DACDAT;
+	output [7:0] LEDR;
 
 	// Local wires.
 	wire read_ready, write_ready, read, write;
@@ -24,6 +25,31 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 	/////////////////////////////////
 	wire [23:0] noise;
 	
+	wire [23:0] v_left, v_right;
+	
+	wire [7:0] temp_ledr;
+	
+	
+	
+	
+	display_volume display_volume(
+		.clock(CLOCK2_50),
+		.l_in(v_left),
+		.LEDR(temp_ledr)
+		
+	);
+	
+	volume_module volume_module(
+		.clock(CLOCK2_50),
+		.left_input(readdata_left),
+		.right_input(readdata_right),
+		.left_output(v_left),
+		.right_output(v_right)
+		
+	);
+	
+	
+	
 	noise_generator noise_gen(
 		.clk (CLOCK2_50),
 		.rst_n (reset),
@@ -31,8 +57,12 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, FPGA_I2C_SCLK, FPGA_I2C_SDAT, AUD_XC
 		.Q(noise)
 	);
 	
-	assign writedata_left = readdata_left + (SW[9] ? noise : 24'b0);
-	assign writedata_right = KEY[1] ? readdata_right + (SW[9] ? noise : 24'b0)
+	
+	
+	
+	assign LEDR = temp_ledr;
+	assign writedata_left = v_left + (SW[9] ? noise : 24'b0);
+	assign writedata_right = KEY[1] ? v_right + (SW[9] ? noise : 24'b0)
 											  : 24'b0;
 	assign read = read_ready;
 	assign write = write_ready;
